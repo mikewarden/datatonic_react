@@ -7,13 +7,18 @@ import 'devextreme/dist/css/dx.light.css';
 import { Stack } from '@devexpress/dx-react-chart';
 import StackedChart1 from './StackedChart1.js';
 import Navbar from './Navbar.js';
+import PieChart1 from './PieChart1.js';
 
 class App extends React.Component {
   render() {
   return (
     <div className="App">
       <Navbar />
+      <br/>
+      <h2 id="overview-text">Overview</h2>
+      <hr/>
       <StackedChart1 />
+      <PieChart1 />
     </div>
   );
 }
