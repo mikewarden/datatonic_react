@@ -39,3 +39,12 @@
   height: 480px;
   padding: 30px;
 }
+
+#nav {
+  padding: 0px;
+}
+
+#drop-down {
+  top: 0;
+  right: 0;
+}
