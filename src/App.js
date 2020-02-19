@@ -6,12 +6,13 @@ import 'devextreme/dist/css/dx.common.css';
 import 'devextreme/dist/css/dx.light.css';
 import { Stack } from '@devexpress/dx-react-chart';
 import StackedChart1 from './StackedChart1.js';
+import Navbar from './Navbar.js';
 
 class App extends React.Component {
   render() {
   return (
     <div className="App">
-      <h1>DataTonic</h1>
+      <Navbar />
       <StackedChart1 />
     </div>
   );

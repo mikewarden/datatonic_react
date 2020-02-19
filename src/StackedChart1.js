@@ -34,7 +34,7 @@ class StackedChart1 extends React.Component {
     passport: response[0].passport,
     routing: response[0].routing,
     dob: response[0].dob,
-    credit: response[0].credit
+    credit: response[0].creditCard
 
   })
   console.log(this.state.swiftCode)
@@ -44,78 +44,78 @@ class StackedChart1 extends React.Component {
 
   customizeTooltip(arg) {
     return {
-      text: `${arg.seriesName } years: ${ arg.valueText}`
+      text: `${arg.seriesName } Records: ${ arg.valueText}`
     };
   }
   render() {
     const dataSource = [{
   state: 'DS1',
   swiftCode: this.state.swiftCode,
-  email: 2,
-  bank: 4,
-  phone: 5,
-  ssn: 8,
-  passport: 4,
-  routing: 6,
-  dob: 6,
-  credit: 8
+  email: this.state.email,
+  bank: this.state.bank,
+  phone: this.state.phone,
+  ssn: this.state.ssn,
+  passport: this.state.passport,
+  routing: this.state.routing,
+  dob: this.state.dob,
+  credit: this.state.credit
 }, {
   state: 'DS2',
-  swiftCode: 3,
-  email: 2,
-  bank: 4,
-  phone: 5,
-  ssn: 8,
-  passport: 4,
-  routing: 6,
-  dob: 6,
-  credit: 8
+  swiftCode: this.state.dob,
+  email: this.state.email,
+  bank: this.state.phone,
+  phone: this.state.routing,
+  ssn: this.state.credit,
+  passport: this.state.passport,
+  routing: this.state.ssn,
+  dob: this.state.swiftCode,
+  credit: this.state.phone
 }, {
   state: 'DS3',
-  swiftCode: 3,
-  email: 2,
-  bank: 4,
-  phone: 5,
-  ssn: 8,
-  passport: 4,
-  routing: 6,
-  dob: 6,
-  credit: 8
+  swiftCode: this.state.ssn,
+  email: this.state.phone,
+  bank: this.state.bank,
+  phone: this.state.swiftCode,
+  ssn: this.state.dob,
+  passport: this.state.routing,
+  routing: this.state.bank,
+  dob: this.state.ssn,
+  credit: this.state.email
 }, {
   state: 'DS4',
-  swiftCode: 3,
-  email: 2,
-  bank: 4,
-  phone: 5,
-  ssn: 8,
-  passport: 4,
-  routing: 6,
-  dob: 6,
+  swiftCode: this.state.bank,
+  email: this.state.routing,
+  bank: this.state.dob,
+  phone: this.state.ssn,
+  ssn: this.state.bank,
+  passport: this.state.swiftCode,
+  routing: this.state.phone,
+  dob: this.state.ssn,
   credit: 8
 },
 {
   state: 'DS5',
-  swiftCode: 3,
-  email: 2,
-  bank: 4,
-  phone: 5,
-  ssn: 8,
-  passport: 4,
-  routing: 6,
-  dob: 6,
-  credit: 8
+  swiftCode: this.state.ssn,
+  email: this.state.routing,
+  bank: this.state.phone,
+  phone: this.state.ssn,
+  ssn: this.state.dob,
+  passport:  this.state.bank,
+  routing: this.state.phone,
+  dob: this.state.swiftCode,
+  credit: this.state.bank
 },
 {
   state: 'DS6',
-  swswiftCode: 3,
-  email: 2,
-  bank: 4,
-  phone: 5,
-  ssn: 8,
-  passport: 4,
-  routing: 6,
-  dob: 6,
-  credit: 8
+  swswiftCode: this.state.ssn,
+  email: this.state.routing,
+  bank: this.state.bank,
+  phone: this.state.passport,
+  ssn: this.state.ssn,
+  passport: this.state.dob,
+  routing: this.state.email,
+  dob: this.state.phone,
+  credit: this.state.credit
 },
 ];
     return (
