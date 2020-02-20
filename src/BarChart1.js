@@ -13,7 +13,7 @@ export default class BarChart1 extends React.Component {
           this.state = {
           
             series: [{
-              data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380]
+              data: [400, 430, 448, 470]
             }],
             options: {
               chart: {
@@ -29,9 +29,7 @@ export default class BarChart1 extends React.Component {
                 enabled: false
               },
               xaxis: {
-                categories: ['South Korea', 'Canada', 'United Kingdom', 'Netherlands', 'Italy', 'France', 'Japan',
-                  'United States', 'China', 'Germany'
-                ],
+                categories: ['DS1', 'DS2', 'DS3', 'DS4'],
               }
             },
           
@@ -39,6 +37,18 @@ export default class BarChart1 extends React.Component {
           };
         }
 
+         componentDidMount() {
+    fetch("http://localhost:8080/data_entries")
+.then((res) => res.json())
+.then((response) => {
+  this.setState({
+    series: [{
+              data: [response[0].icDS1, response[0].icDS2, response[1].icDS3, response[1].icDS4]
+            }]
+	})
+  console.log(this.state.swiftCode)
+}).catch((err) => console.log(err));
+  }
       
 
         render() {
