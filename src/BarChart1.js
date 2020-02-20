@@ -55,8 +55,8 @@ export default class BarChart1 extends React.Component {
           return (
             
 
-<div id="chart">
-<ReactApexChart options={this.state.options} series={this.state.series} type="bar" height={350} />
+<div id="chart2">
+<ReactApexChart id="chart2" options={this.state.options} series={this.state.series} type="bar" height={350} />
 </div>
 
           );

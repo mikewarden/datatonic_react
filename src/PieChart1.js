@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 import CanvasJSReact from './canvasjs.react';
 var CanvasJS = CanvasJSReact.CanvasJS;
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
@@ -71,8 +72,8 @@ class PieChart1 extends React.Component {
 			}]
 		}
 		return (
-		<div>
-			<CanvasJSChart options = {options}
+		<div className="canvas_js_chart">
+			<CanvasJSChart  options = {options}
 				/* onRef={ref => this.chart = ref} */
 			/>
 			{/*You can get reference to the chart instance as shown above using onRef. This allows you to access all chart properties and methods*/}

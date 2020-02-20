@@ -12,6 +12,11 @@
   padding: 30px;
 }
 
+#chart2 {
+  width: 450px;
+  height: 230px;
+}
+
 #nav {
   padding: 0px;
 }
@@ -23,4 +28,13 @@
 
 #overview-text {
   margin-left: 20px;
+}
+
+.canvas_js_chart {
+  height: 250px;
+  width: 250px;
+}
+
+#row6 {
+  margin-top: 170px;
 }

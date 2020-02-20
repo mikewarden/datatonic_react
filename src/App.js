@@ -10,19 +10,47 @@ import Navbar from './Navbar.js';
 import PieChart1 from './PieChart1.js';
 import PieChart2 from './PieChart2.js';
 import BarChart1 from './BarChart1.js';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 
 class App extends React.Component {
   render() {
   return (
     <div className="App">
-      <Navbar />
-      <br/>
+
+      <Container>
+  <Row id="row1">
+  	<Col><Navbar /></Col>
+  </Row>
+  <Row id="row2">
+    <Col><br/>
       <h2 id="overview-text">Overview</h2>
       <hr/>
-      <StackedChart1 />
-      <PieChart1 />
-      <PieChart2 />
-      <BarChart1 />
+    </Col>
+  </Row>
+  <Row id="row3">
+    <Col>1 of 3</Col>
+    <Col>2 of 3</Col>
+    <Col>3 of 3</Col>
+  </Row>
+  <Row id="row4">
+    <Col><StackedChart1 /></Col>
+    <Col>Menu Aside</Col>
+  </Row> 
+  <Row id="row5">
+    <Col><PieChart1 /></Col>
+    <Col><PieChart2 /></Col>
+    <br/>
+  </Row>
+  <Row id="row6">
+    <Col><BarChart1 /></Col>
+    <Col>2 of 3</Col>
+    <Col>3 of 3</Col>
+  </Row>
+</Container>
+
     </div>
   );
 }
