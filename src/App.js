@@ -8,6 +8,7 @@ import { Stack } from '@devexpress/dx-react-chart';
 import StackedChart1 from './StackedChart1.js';
 import Navbar from './Navbar.js';
 import PieChart1 from './PieChart1.js';
+import PieChart2 from './PieChart2.js';
 
 class App extends React.Component {
   render() {
@@ -19,6 +20,7 @@ class App extends React.Component {
       <hr/>
       <StackedChart1 />
       <PieChart1 />
+      <PieChart2 />
     </div>
   );
 }
