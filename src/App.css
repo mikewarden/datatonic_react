@@ -1,4 +1,7 @@
+.App {
 
+background-color: #FBFCFD;
+}
 
 
 .series-bar {
@@ -7,14 +10,13 @@
 }
 
 #chart {
-  width: 790px;
-  height: 480px;
-  padding: 30px;
+  width: 770px;
+  height: 460px;
+  padding:10px;
 }
 
 #chart2 {
-  width: 450px;
-  height: 230px;
+  padding-bottom: 25px;
 }
 
 #nav {
@@ -31,10 +33,17 @@
 }
 
 .canvas_js_chart {
-  height: 250px;
-  width: 250px;
+  
 }
 
 #row6 {
-  margin-top: 170px;
+  margin-top: 25px;
 }
+
+#row5 {
+  margin-top: 25px;
+}
+
+
+
+

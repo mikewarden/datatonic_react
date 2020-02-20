@@ -121,7 +121,7 @@ class StackedChart1 extends React.Component {
     return (
       <Chart
         id="chart"
-        title="Sensitive Data Distribution by Data Sources"
+        title=""
         dataSource={dataSource}
       >
         <CommonSeriesSettings argumentField="state" type="stackedBar" />

@@ -44,7 +44,7 @@ class PieChart1 extends React.Component {
 		const options = {
 			animationEnabled: true,
 			title: {
-				text: "Sensitive Info By Type"
+				text: ""
 			},
 			subtitles: [{
 				text: "",
