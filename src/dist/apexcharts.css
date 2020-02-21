@@ -379,8 +379,8 @@
 .apexcharts-menu-icon,
 .apexcharts-toolbar-custom-icon {
   cursor: pointer;
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   line-height: 24px;
   color: #6E8192;
   text-align: center;
@@ -396,7 +396,7 @@
 }
 .apexcharts-selection-icon svg {
   fill: #444;
-  transform: scale(0.76)
+  transform: scale(0.46)
 }
 
 .apexcharts-theme-dark .apexcharts-zoom-icon svg,
@@ -481,13 +481,13 @@
 .apexcharts-menu {
   background: #fff;
   position: absolute;
-  top: 100%;
+  top: 60%;
   border: 1px solid #ddd;
   border-radius: 3px;
   padding: 3px;
   right: 10px;
   opacity: 0;
-  min-width: 110px;
+  min-width: 50px;
   transition: 0.15s ease all;
   pointer-events: none;
 }

@@ -11,6 +11,9 @@ import PieChart1 from './PieChart1.js';
 import PieChart2 from './PieChart2.js';
 import BarChart1 from './BarChart1.js';
 import BarChart2 from './BarChart2.js';
+import BarChart3 from './BarChart3.js';
+import BarChart4 from './BarChart4.js';
+import AsideMenu from './AsideMenu.js';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -33,9 +36,9 @@ class App extends React.Component {
   </Row>
   <Row id="row3">
     <Col>
-    	<Card border="light" >
+    	<Card border="light" className="card_style">
     		
-    		<Card.Body>
+    		<Card.Body className="card_style">
       			<Card.Title>
       				
       			</Card.Title>
@@ -47,9 +50,9 @@ class App extends React.Component {
   		</Card>
     </Col>
     <Col>
-    	<Card border="light" >
+    	<Card border="light" className="card_style">
     		
-    		<Card.Body>
+    		<Card.Body className="card_style">
       			<Card.Title>
       				
       			</Card.Title>
@@ -61,9 +64,9 @@ class App extends React.Component {
   		</Card>
     </Col>
     <Col>
-    	<Card border="light" >
+    	<Card border="light" className="card_style">
     		
-    		<Card.Body>
+    		<Card.Body className="card_style">
       			<Card.Title>
       				
       			</Card.Title>
@@ -76,10 +79,10 @@ class App extends React.Component {
     </Col>
   </Row>
   <Row id="row4">
-    <Col>	
-    	<Card border="light" >
+    <Col xs={8}>	
+    	<Card border="light" className="card_style">
     	
-    		<Card.Body>
+    		<Card.Body className="card_style">
       			<Card.Title>
       				Sensitive Data Distribution by Data Sources
       			</Card.Title>
@@ -90,26 +93,26 @@ class App extends React.Component {
     		</Card.Body>
   		</Card>
   	</Col>
-    <Col>
-    	<Card border="light" >
+    <Col xs={4}>
+    	<Card border="light" className="card_style">
     		
-    		<Card.Body>
+    		<Card.Body className="card_style">
       			<Card.Title>
-      				
+      				Notification
       			</Card.Title>
       			<Card.Text>
     
       			</Card.Text>
-      			
+      			<AsideMenu />
     		</Card.Body>
   		</Card>
     </Col>
   </Row> 
   <Row id="row5">
-    <Col>
-    	<Card border="light" >
+    <Col xs={4}>
+    	<Card border="light" id="pieChart1Card" className="card_style">
     		
-    		<Card.Body>
+    		<Card.Body className="card_style">
       			<Card.Title>
       				Sensitive Info By Type
       			</Card.Title>
@@ -120,9 +123,9 @@ class App extends React.Component {
     		</Card.Body>
   		</Card>
     </Col>
-    <Col>
-    	<Card border="light" >
-    		<Card.Body>
+    <Col xs={4}>
+    	<Card border="light" className="card_style">
+    		<Card.Body className="card_style">
       			<Card.Title>
       				Sensitive Info By Category
       			</Card.Title>
@@ -133,9 +136,9 @@ class App extends React.Component {
     		</Card.Body>
   		</Card>
     </Col>
-    <Col>
-    	<Card border="light" >
-    		<Card.Body>
+    <Col xs={4}>
+    	<Card border="light" className="card_style">
+    		<Card.Body className="card_style">
       			<Card.Title>
       				Inspection Coverage	
       			</Card.Title>
@@ -149,12 +152,12 @@ class App extends React.Component {
     <br/>
   </Row>
   <Row id="row6">
-    <Col>
-    	<Card border="light" >
+    <Col xs={4}>
+    	<Card border="light" className="card_style">
     		
-    		<Card.Body>
+    		<Card.Body className="card_style">
       			<Card.Title>
-      				
+      				Count of Sensitive Info Type
       			</Card.Title>
       			<Card.Text>
     
@@ -163,31 +166,31 @@ class App extends React.Component {
     		</Card.Body>
   		</Card>
     </Col>
-    <Col>
-    	<Card border="light" >
+    <Col xs={4}>
+    	<Card border="light" className="card_style">
     		
-    		<Card.Body>
+    		<Card.Body className="card_style">
       			<Card.Title>
-      				
+      				Count of Sensitive Info Category
       			</Card.Title>
       			<Card.Text>
     
       			</Card.Text>
-      			
+      			<BarChart3 />
     		</Card.Body>
   		</Card>
     </Col>
-    <Col>
-    	<Card border="light" >
+    <Col xs={4}>
+    	<Card border="light" className="card_style">
     		
-    		<Card.Body>
+    		<Card.Body className="card_style">
       			<Card.Title>
-      				
+      				Sensitive Data Record Count
       			</Card.Title>
       			<Card.Text>
     
       			</Card.Text>
-      			
+      			<BarChart4 />
     		</Card.Body>
   		</Card>
     </Col>

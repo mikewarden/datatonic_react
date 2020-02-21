@@ -5,7 +5,7 @@ import './App.css';
 import ApexChart from 'apexcharts';
 import ReactApexChart from "react-apexcharts";
 
-export default class BarChart1 extends React.Component {
+export default class BarChart3 extends React.Component {
         constructor(props) {
           super(props);
 
