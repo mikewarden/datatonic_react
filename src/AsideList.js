@@ -22,7 +22,7 @@ export default function AsideList() {
   const classes = useStyles();
 
   return (
-    <List className={classes.root}>
+    <List id="aside_list"className={classes.root}>
       <ListItem>
         <ListItemAvatar>
           <Avatar>

@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Chart, Series, CommonSeriesSettings, Legend, ValueAxis, Title, Export, Tooltip } from 'devextreme-react/chart';
+import { Palette } from '@devexpress/dx-react-chart';
 import service from './data.js';
 
 
@@ -124,6 +125,7 @@ class StackedChart1 extends React.Component {
         title=""
         dataSource={dataSource}
       >
+  
         <CommonSeriesSettings argumentField="state" type="stackedBar" />
         <Series className="series-bar"
           valueField="swiftCode"

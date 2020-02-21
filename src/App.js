@@ -22,6 +22,33 @@ import Card from 'react-bootstrap/Card'
 
 
 class App extends React.Component {
+
+	constructor() {
+    super();
+      this.state = {
+      	sources: 0,
+        issues: 0,
+    	dbs: 0,
+    	tables: 0,
+    	files: 0,
+    }
+  }
+
+   componentDidMount() {
+    fetch("http://localhost:8080/data_entries")
+.then((res) => res.json())
+.then((response) => {
+  this.setState({
+    issues: response[1].issuesResolved,
+    sources: response[1].email,
+    dbs: response[1].coverageDBs,
+    tables: response[1].coverageTables,
+    files: response[1].coverageFiles,
+  })
+  console.log(this.state.swiftCode)
+}).catch((err) => console.log(err));
+  }
+
   render() {
   return (
     <div className="App">
@@ -45,6 +72,8 @@ class App extends React.Component {
     	<Card className="card_style">
     		<div className="security_issues_card"></div>
     		<Card.Body className="card_style">
+    		<p className="centered_text">Security Issues Resolved</p>
+    		<h2 id="issues_state">{this.state.issues}</h2>
       			<Card.Title>
       				
       			</Card.Title>
@@ -60,7 +89,7 @@ class App extends React.Component {
     	<Card className="card_style">
     		<div className="security_issues_card"></div>
     		<Card.Body className="card_style">
-    			
+    			<p className="centered_text">Inspection Coverage</p>
       			<Card.Title>
       				
       			</Card.Title>
@@ -75,6 +104,25 @@ class App extends React.Component {
     	<Card  className="card_style">
     		<div className="security_issues_card"></div>
     		<Card.Body className="card_style">
+    		<p className="centered_text">Sensitive Data Locations</p>
+    		<Row>
+    			<Col>
+    				<h2 id="sources_state">{this.state.sources}</h2>
+    				<span className="sens_data_text">Data Sources</span>
+    			</Col>
+    			<Col>
+    				<h2 id="dbs_state">{this.state.dbs}</h2>
+    				<span className="sens_data_text">Databases</span>
+    			</Col>
+    			<Col>
+    				<h2 id="tables_state">{this.state.tables}</h2>
+    				<span className="sens_data_text">Tables</span>
+    			</Col>
+    			<Col>
+    				<h2 id="files_state">{this.state.files}</h2>
+    				<span className="sens_data_text">Files</span>
+    			</Col>
+    		</Row>
       			<Card.Title>
       				
       			</Card.Title>

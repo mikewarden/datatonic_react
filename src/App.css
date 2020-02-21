@@ -103,3 +103,42 @@ background-color: #FBFCFD;
   padding-left: 0;
     
 }
+
+.centered_text {
+  text-align: center;
+  color: #797979;
+}
+
+#issues_state {
+  text-align: center;
+  color: #35ACDE;
+}
+
+#sources_state {
+  text-align: center;
+  color: #35ACDE;
+}
+
+#dbs_state {
+  text-align: center;
+  color: #35ACDE;
+}
+
+#tables_state {
+  text-align: center;
+  color: #35ACDE;
+}
+
+#files_state {
+  text-align: center;
+  color: #35ACDE;
+}
+
+#aside_list {
+  background-color: rgba(88,183,229,0.07);
+}
+
+.sens_data_text {
+  font-size: 10px;
+  margin-left: 15px;
+}
