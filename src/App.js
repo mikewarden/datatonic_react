@@ -14,6 +14,7 @@ import BarChart2 from './BarChart2.js';
 import BarChart3 from './BarChart3.js';
 import BarChart4 from './BarChart4.js';
 import AsideMenu from './AsideMenu.js';
+import ProgressBar from './ProgressBar.js';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -31,13 +32,18 @@ class App extends React.Component {
   <Row id="row2">
     <Col><br/>
       <h2 id="overview-text">Overview</h2>
-      <hr/>
     </Col>
+    <Col><br/>
+      <h6 id="scan-text">Last scan <strong>4 hours ago</strong></h6>
+    </Col>
+
   </Row>
+  <hr/>
   <Row id="row3">
-    <Col>
-    	<Card border="light" className="card_style">
-    		
+    <Col id="row3_col1">
+    	
+    	<Card className="card_style">
+    		<div className="security_issues_card"></div>
     		<Card.Body className="card_style">
       			<Card.Title>
       				
@@ -45,27 +51,29 @@ class App extends React.Component {
       			<Card.Text>
     
       			</Card.Text>
-      			
+ 
     		</Card.Body>
   		</Card>
     </Col>
-    <Col>
-    	<Card border="light" className="card_style">
-    		
+    <Col id="row3_col2">
+    	
+    	<Card className="card_style">
+    		<div className="security_issues_card"></div>
     		<Card.Body className="card_style">
+    			
       			<Card.Title>
       				
       			</Card.Title>
       			<Card.Text>
-    
-      			</Card.Text>
+          			</Card.Text>
       			
     		</Card.Body>
   		</Card>
     </Col>
-    <Col>
-    	<Card border="light" className="card_style">
-    		
+    <Col id="row3_col3">
+    
+    	<Card  className="card_style">
+    		<div className="security_issues_card"></div>
     		<Card.Body className="card_style">
       			<Card.Title>
       				
@@ -79,7 +87,7 @@ class App extends React.Component {
     </Col>
   </Row>
   <Row id="row4">
-    <Col xs={8}>	
+    <Col xs={7}>	
     	<Card border="light" className="card_style">
     	
     		<Card.Body className="card_style">
@@ -90,13 +98,14 @@ class App extends React.Component {
     
       			</Card.Text>
       			<StackedChart1 />
+      			<p id="chart1_bottom_text">(Sensitive Info Type)</p>
     		</Card.Body>
   		</Card>
   	</Col>
-    <Col xs={4}>
+    <Col xs={5}>
     	<Card border="light" className="card_style">
     		
-    		<Card.Body className="card_style">
+    		<Card.Body className="card_style" id="notification_card">
       			<Card.Title>
       				Notification
       			</Card.Title>
@@ -169,8 +178,8 @@ class App extends React.Component {
     <Col xs={4}>
     	<Card border="light" className="card_style">
     		
-    		<Card.Body className="card_style">
-      			<Card.Title>
+    		<Card.Body id="chart3_style" className="card_style">
+      			<Card.Title> 
       				Count of Sensitive Info Category
       			</Card.Title>
       			<Card.Text>

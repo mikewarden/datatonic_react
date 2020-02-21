@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import AsideNav from './AsideNav';
+import AsideList from './AsideList';
 
 export default class AsideMenu extends React.Component {
   constructor() {
@@ -12,8 +13,9 @@ export default class AsideMenu extends React.Component {
 
   render() {
     return (
-        <div>
+        <div className="aside_nav">
           <AsideNav />
+          <AsideList />
         </div>
     )
   }

@@ -17,6 +17,10 @@ background-color: #FBFCFD;
   padding-bottom: 25px;
 }
 
+#chart3_style {
+  overflow-y: scroll;
+}
+
 #nav {
   padding: 0px;
 }
@@ -28,6 +32,9 @@ background-color: #FBFCFD;
 
 #overview-text {
   margin-left: 20px;
+}
+#scan-text {
+  float: right;
 }
 
 .canvas_js_chart {
@@ -63,7 +70,36 @@ background-color: #FBFCFD;
   border: 1px solid #EBEBEB;
 }
 
-#aside_nav {
-
+.aside_nav {
+  font-size: 8px;
 }
 
+#notification_card {
+  overflow-y: scroll;
+}
+
+#chart1_bottom_text {
+  text-align: center;
+}
+
+.security_issues_card {
+  margin-left: 2%;
+  height: 2px;
+  width: 95%;
+  background-color: #35ACDE;
+}
+
+#row3_col1 {
+  padding-right:0;
+    
+}
+
+#row3_col2 {
+  padding-right: 0;
+  padding-left: 0; 
+}
+
+#row3_col3 {
+  padding-left: 0;
+    
+}
