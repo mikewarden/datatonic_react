@@ -114,6 +114,11 @@ background-color: #FBFCFD;
   color: #35ACDE;
 }
 
+.sources_state {
+  text-align: center;
+  color: #35ACDE;
+}
+
 #sources_state {
   text-align: center;
   color: #35ACDE;
@@ -145,11 +150,23 @@ background-color: #FBFCFD;
 
 .vertical_text {
   writing-mode: vertical-rl;
-text-orientation: mixed;
+text-orientation: sideways-right;
 left: 0;
 margin-top: 150px;
 }
 
 #navbar {
   height: 80px;
+}
+
+.inspection_denominator {
+  color: #C5C5C5;
+}
+
+#graph_icon1 {
+  margin-left: 80px;
+  color: #35ACDE;
+  width: 70px;
+  height: 60px;
+
 }

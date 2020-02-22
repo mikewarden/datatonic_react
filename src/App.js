@@ -5,6 +5,7 @@ import '@devexpress/dx-react-chart-bootstrap4/dist/dx-react-chart-bootstrap4.css
 import 'devextreme/dist/css/dx.common.css';
 import 'devextreme/dist/css/dx.light.css';
 import { Stack } from '@devexpress/dx-react-chart';
+import ProgressBar from 'react-bootstrap/ProgressBar'
 import StackedChart1 from './StackedChart1.js';
 import Navbar from './Navbar.js';
 import PieChart1 from './PieChart1.js';
@@ -14,7 +15,7 @@ import BarChart2 from './BarChart2.js';
 import BarChart3 from './BarChart3.js';
 import BarChart4 from './BarChart4.js';
 import AsideMenu from './AsideMenu.js';
-import ProgressBar from './ProgressBar.js';
+import TimelineIcon from '@material-ui/icons/Timeline';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -57,7 +58,7 @@ class App extends React.Component {
   <Row id="row1">
   </Row>
   <Row id="row2">
-    <Col><br/>
+    <Col>
       <h2 id="overview-text">Overview</h2>
     </Col>
     <Col><br/>
@@ -74,6 +75,7 @@ class App extends React.Component {
     		<Card.Body className="card_style">
     		<p className="centered_text">Security Issues Resolved</p>
     		<h2 id="issues_state">{this.state.issues}</h2>
+    		<TimelineIcon id="graph_icon1"/>
       			<Card.Title>
       				
       			</Card.Title>
@@ -90,6 +92,23 @@ class App extends React.Component {
     		<div className="security_issues_card"></div>
     		<Card.Body className="card_style">
     			<p className="centered_text">Inspection Coverage</p>
+    			<Row>
+    			<Col>
+    				<h2 class="sources_state">{this.state.sources}<span className="inspection_denominator">/50</span></h2>
+    				<ProgressBar now={this.state.sources} />
+    				<span className="sens_data_text">Data Sources</span>
+    			</Col>
+    			<Col>
+    				<h2 class="sources_state">{this.state.dbs}<span className="inspection_denominator">/50</span></h2>
+    				<ProgressBar now={this.state.dbs} />
+    				<span className="sens_data_text">Databases</span>
+    			</Col>
+    			<Col>
+    				<h2 class="sources_state">{this.state.tables}<span className="inspection_denominator">/7853</span></h2>
+    				<ProgressBar now={this.state.tables} />
+    				<span className="sens_data_text">Tables</span>
+    			</Col>
+    		</Row>
       			<Card.Title>
       				
       			</Card.Title>
@@ -201,7 +220,7 @@ class App extends React.Component {
       			</Card.Title>
       			<Row>
       			<Col xs={2}>
-      			<p className="vertical_text" >(Data Sources)</p>
+      			<p className="vertical_text" >(Data Source)</p>
       			</Col>
       			<Card.Text>
     
@@ -225,7 +244,7 @@ class App extends React.Component {
       			</Card.Title>
       			<Row>
       			<Col xs={2}>
-      			<p className="vertical_text" >(Data Sources)</p>
+      			<p className="vertical_text" >(Data Source)</p>
       			</Col>
       			<Card.Text>
     
@@ -248,10 +267,20 @@ class App extends React.Component {
       			<Card.Title> 
       				Count of Sensitive Info Category
       			</Card.Title>
+      			<Row>
+      			<Col xs={2}>
+      			<p className="vertical_text" >(Data Source)</p>
+      			</Col>
       			<Card.Text>
     
       			</Card.Text>
+      			<Col xs={10}>
       			<BarChart3 />
+      			</Col>
+      			</Row>
+      			<Card.Text>
+    
+      			</Card.Text>
     		</Card.Body>
   		</Card>
     </Col>
@@ -262,10 +291,21 @@ class App extends React.Component {
       			<Card.Title>
       				Sensitive Data Record Count
       			</Card.Title>
+      			<Row>
+      			<Col xs={2}>
+      			<p className="vertical_text" >(Data Source)</p>
+      			</Col>
       			<Card.Text>
     
       			</Card.Text>
+      			<Col xs={10}>
       			<BarChart4 />
+      			</Col>
+      			</Row>
+      			<Card.Text>
+    
+      			</Card.Text>
+      			
     		</Card.Body>
   		</Card>
     </Col>
