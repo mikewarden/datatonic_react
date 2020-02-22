@@ -67,7 +67,7 @@ class App extends React.Component {
   </Row>
   <hr/>
   <Row id="row3">
-    <Col id="row3_col1">
+    <Col id="row3_col1" xs={3}>
     	
     	<Card className="card_style">
     		<div className="security_issues_card"></div>
@@ -84,7 +84,7 @@ class App extends React.Component {
     		</Card.Body>
   		</Card>
     </Col>
-    <Col id="row3_col2">
+    <Col id="row3_col2" xs={5}>
     	
     	<Card className="card_style">
     		<div className="security_issues_card"></div>
@@ -99,7 +99,7 @@ class App extends React.Component {
     		</Card.Body>
   		</Card>
     </Col>
-    <Col id="row3_col3">
+    <Col id="row3_col3" xs={4}>
     
     	<Card  className="card_style">
     		<div className="security_issues_card"></div>
@@ -199,10 +199,17 @@ class App extends React.Component {
       			<Card.Title>
       				Inspection Coverage	
       			</Card.Title>
+      			<Row>
+      			<Col xs={2}>
+      			<p className="vertical_text" >(Data Sources)</p>
+      			</Col>
       			<Card.Text>
     
       			</Card.Text>
+      			<Col xs={10}>
       			<BarChart1 />
+      			</Col>
+      			</Row>
     		</Card.Body>
   		</Card>
     </Col>
@@ -216,10 +223,21 @@ class App extends React.Component {
       			<Card.Title>
       				Count of Sensitive Info Type
       			</Card.Title>
+      			<Row>
+      			<Col xs={2}>
+      			<p className="vertical_text" >(Data Sources)</p>
+      			</Col>
       			<Card.Text>
     
       			</Card.Text>
+      			<Col xs={10}>
       			<BarChart2 />
+      			</Col>
+      			</Row>
+      			<Card.Text>
+    
+      			</Card.Text>
+      			
     		</Card.Body>
   		</Card>
     </Col>

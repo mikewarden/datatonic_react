@@ -24,7 +24,7 @@ export default function Navbar() {
 
   return (
     <Paper className={classes.root}>
-      <Tabs
+      <Tabs id="navbar"
         value={value}
         onChange={handleChange}
         indicatorColor="primary"
