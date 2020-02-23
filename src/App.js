@@ -154,7 +154,7 @@ class App extends React.Component {
     </Col>
   </Row>
   <Row id="row4">
-    <Col xs={7}>	
+    <Col xs={8}>	
     	<Card border="light" className="card_style">
     	
     		<Card.Body className="card_style">
@@ -169,7 +169,7 @@ class App extends React.Component {
     		</Card.Body>
   		</Card>
   	</Col>
-    <Col xs={5}>
+    <Col xs={4}>
     	<Card border="light" className="card_style">
     		
     		<Card.Body className="card_style" id="notification_card">
