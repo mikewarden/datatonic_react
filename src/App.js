@@ -94,17 +94,17 @@ class App extends React.Component {
     			<p className="centered_text">Inspection Coverage</p>
     			<Row>
     			<Col>
-    				<h2 class="sources_state">{this.state.sources}<span className="inspection_denominator">/50</span></h2>
+    				<span class="sources_state">{this.state.sources}</span><span className="inspection_denominator">/50</span>
     				<ProgressBar now={this.state.sources} />
     				<span className="sens_data_text">Data Sources</span>
     			</Col>
     			<Col>
-    				<h2 class="sources_state">{this.state.dbs}<span className="inspection_denominator">/50</span></h2>
+    				<span class="sources_state">{this.state.dbs}<span className="inspection_denominator">/50</span></span>
     				<ProgressBar now={this.state.dbs} />
     				<span className="sens_data_text">Databases</span>
     			</Col>
     			<Col>
-    				<h2 class="sources_state">{this.state.tables}<span className="inspection_denominator">/7853</span></h2>
+    				<span class="sources_state">{this.state.tables}<span className="inspection_denominator">/7853</span></span>
     				<ProgressBar now={this.state.tables} />
     				<span className="sens_data_text">Tables</span>
     			</Col>
@@ -126,19 +126,19 @@ class App extends React.Component {
     		<p className="centered_text">Sensitive Data Locations</p>
     		<Row>
     			<Col>
-    				<h2 id="sources_state">{this.state.sources}</h2>
+    				<h2 id="sources_state" class="sources_state">{this.state.sources}</h2>
     				<span className="sens_data_text">Data Sources</span>
     			</Col>
     			<Col>
-    				<h2 id="dbs_state">{this.state.dbs}</h2>
+    				<h2 id="dbs_state" class="sources_state">{this.state.dbs}</h2>
     				<span className="sens_data_text">Databases</span>
     			</Col>
     			<Col>
-    				<h2 id="tables_state">{this.state.tables}</h2>
+    				<h2 id="tables_state" class="sources_state">{this.state.tables}</h2>
     				<span className="sens_data_text">Tables</span>
     			</Col>
     			<Col>
-    				<h2 id="files_state">{this.state.files}</h2>
+    				<h2 id="files_state" class="sources_state">{this.state.files}</h2>
     				<span className="sens_data_text">Files</span>
     			</Col>
     		</Row>

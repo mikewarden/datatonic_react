@@ -139,6 +139,8 @@ background-color: #FBFCFD;
   text-align: center;
   color: #35ACDE;
   font-family: 'Lato', serif;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 #sources_state {
@@ -192,6 +194,8 @@ font-family: 'Lato', serif;
 .inspection_denominator {
   color: #C5C5C5;
   font-family: 'Lato', serif;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 #graph_icon1 {
