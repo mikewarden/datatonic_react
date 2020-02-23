@@ -57,6 +57,8 @@ export default class BarChart4 extends React.Component {
       axisY: {
         suffix: "k"
       },
+      height: 240,
+      dataPointMaxWidth: 12,
       data: [{
         type: "stackedBar",
         color: "#35ACDE",
