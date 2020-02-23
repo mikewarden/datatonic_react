@@ -4,7 +4,6 @@ font-family: 'Lato', serif;
 background-color: #FBFCFD;
 }
 
-
 .series-bar {
   width: 10px;
   padding: 50px;
@@ -43,12 +42,11 @@ background-color: #FBFCFD;
 #scan-text {
   float: right;
   font-family: 'Lato', serif;
+  color: #58595B;
 }
 
 .canvas_js_chart {
-  font-family: 'Lato', serif;
-  
- 
+  font-family: 'Lato', serif; 
 }
 
 #row6 {
@@ -135,6 +133,9 @@ background-color: #FBFCFD;
   text-align: center;
   color: #35ACDE;
   font-family: 'Lato', serif;
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: -12px;
 }
 
 .sources_state {
@@ -208,8 +209,7 @@ background-color: #FBFCFD;
   margin-left: 80px;
   color: #35ACDE;
   width: 70px;
-  height: 60px;
-
+  height: 35px;
 }
 
 #notification_number {
@@ -220,10 +220,6 @@ background-color: #FBFCFD;
   color: #fff;
   width: 35px;
   font-size: 12px;
-}
-
-#pieChart1Card {
-
 }
 
 .nav_labels {
@@ -247,8 +243,26 @@ background-color: #FBFCFD;
 
 .chart_title_text {
   color: #797979;
-
 }
+
+#inspection_bottom_text {
+  font-size: 12px;
+  font-family: 'Lato', serif;
+  color: #797979;
+  margin-left: 20px;
+}
+
+/*::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}*/
 
 body {
   font-family: 'Lato', serif;

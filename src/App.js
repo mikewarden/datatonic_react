@@ -243,7 +243,7 @@ class App extends React.Component {
     	<Card border="light" className="card_style">
     		<Card.Body className="card_style">
       			<Card.Title>
-      				<span className="chart_title_text"> Sensitive Info By Cetegory</span>
+      				<span className="chart_title_text"> Sensitive Info By Category</span>
       			</Card.Title>
       			<Card.Text>
     
@@ -291,7 +291,7 @@ class App extends React.Component {
     		
     		<Card.Body className="card_style">
       			<Card.Title>
-      				Count of Sensitive Info Type
+      				<span className="chart_title_text">Count of Sensitive Info Type</span>
       			</Card.Title>
       			<Row>
       			<Col xs={2}>
@@ -316,7 +316,7 @@ class App extends React.Component {
     		
     		<Card.Body id="chart3_style" className="card_style">
       			<Card.Title> 
-      				Count of Sensitive Info Category
+      				<span className="chart_title_text">Count of Sensitive Info Category</span>
       			</Card.Title>
       			<Row>
       			<Col xs={2}>
@@ -340,7 +340,7 @@ class App extends React.Component {
     		
     		<Card.Body className="card_style">
       			<Card.Title>
-      				Sensitive Data Record Count
+      				<span className="chart_title_text">Sensitive Data Record Count</span>
       			</Card.Title>
       			<Row>
       			<Col xs={2}>

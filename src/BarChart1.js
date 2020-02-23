@@ -57,6 +57,7 @@ export default class BarChart1 extends React.Component {
 
 <div id="chart2">
 <ReactApexChart id="chart2" options={this.state.options} series={this.state.series} type="bar" height={250} />
+<span id="inspection_bottom_text">( Inspection Coverage(%))</span>
 </div>
 
           );
