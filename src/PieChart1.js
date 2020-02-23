@@ -43,7 +43,7 @@ class PieChart1 extends React.Component {
 }).catch((err) => console.log(err));
   }
 
-  
+
 	render() {
 		
 		const options = {
@@ -53,6 +53,8 @@ class PieChart1 extends React.Component {
 			title: {
 				text: ""
 			},
+			height: 250,
+			width: 250,
 			subtitles: [{
 				text: "",
 				verticalAlign: "center",

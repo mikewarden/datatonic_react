@@ -52,6 +52,8 @@ class PieChart2 extends React.Component {
 				fontSize: 24,
 				dockInsidePlotArea: true
 			}],
+			height: 250,
+			width: 250,
 			data: [{
 				type: "doughnut",
 				showInLegend: true,

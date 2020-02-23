@@ -64,7 +64,7 @@ export default class BarChart4 extends React.Component {
         color: "#35ACDE",
         name: "Class1",
         showInLegend: true,
-        indexLabel: "{y}",
+        indexLabel: "",
         indexLabelFontColor: "white",
         yValueFormatString: "",
         dataPoints: [
@@ -79,7 +79,7 @@ export default class BarChart4 extends React.Component {
         color: "#E97150",
         name: "Class2",
         showInLegend: true,
-        indexLabel: "{y}",
+        indexLabel: "",
         indexLabelFontColor: "white",
         yValueFormatString: "",
         dataPoints: [
@@ -94,7 +94,7 @@ export default class BarChart4 extends React.Component {
         color: "#6DC893",
         name: "Class3",
         showInLegend: true,
-        indexLabel: "{y}",
+        indexLabel: "",
         indexLabelFontColor: "white",
         yValueFormatString: "",
         dataPoints: [
