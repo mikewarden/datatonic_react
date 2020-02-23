@@ -17,11 +17,12 @@ export default class BarChart1 extends React.Component {
             options: {
               chart: {
                 type: 'bar',
-                height: 350
+                height: 550
               },
               plotOptions: {
                 bar: {
                   horizontal: true,
+                  barHeight: '25%'
                 }
               },
               dataLabels: {
@@ -55,7 +56,7 @@ export default class BarChart1 extends React.Component {
             
 
 <div id="chart2">
-<ReactApexChart id="chart2" options={this.state.options} series={this.state.series} type="bar" height={350} />
+<ReactApexChart id="chart2" options={this.state.options} series={this.state.series} type="bar" height={250} />
 </div>
 
           );

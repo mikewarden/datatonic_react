@@ -20,6 +20,8 @@ class PieChart1 extends React.Component {
     }
   }
 
+
+
    componentDidMount() {
     fetch("http://localhost:8080/data_entries")
 .then((res) => res.json())
@@ -40,9 +42,14 @@ class PieChart1 extends React.Component {
   console.log(this.state.swiftCode)
 }).catch((err) => console.log(err));
   }
+
+  
 	render() {
+		
 		const options = {
+			
 			animationEnabled: true,
+			colorSet:  "customColorSet1",
 			title: {
 				text: ""
 			},

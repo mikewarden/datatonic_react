@@ -43,6 +43,11 @@ export default class BarChart4 extends React.Component {
       title: {
         text: ""
       },
+      plotOptions: {
+                bar: {
+                  barHeight: '25%'
+                }
+              },
       toolTip: {
         shared: true
       },
