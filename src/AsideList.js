@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 import { makeStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -9,6 +10,7 @@ import ErrorIcon from '@material-ui/icons/Error';
 import InfoIcon from '@material-ui/icons/Info';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import Divider from '@material-ui/core/Divider';
+import AccessTimeIcon from '@material-ui/icons/AccessTime';
 
 const useStyles = makeStyles(theme => ({
   root: {

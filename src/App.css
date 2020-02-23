@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 .App {
-
+font-family: 'Lato', serif;
 background-color: #FBFCFD;
 }
 
@@ -10,11 +11,12 @@ background-color: #FBFCFD;
 }
 
 #chart {
-  
+  font-family: 'Lato', serif;
 }
 
 #chart2 {
   padding-bottom: 25px;
+  font-family: 'Lato', serif;
 }
 
 #chart3_style {
@@ -23,63 +25,77 @@ background-color: #FBFCFD;
 
 #nav {
   padding: 0px;
+  font-family: 'Lato', serif;
 }
 
 #drop-down {
   top: 0;
   right: 0;
+  font-family: 'Lato', serif;
 }
 
 #overview-text {
   margin-left: 20px;
+  font-family: 'Lato', serif;
 }
 #scan-text {
   float: right;
+  font-family: 'Lato', serif;
 }
 
 .canvas_js_chart {
-  
+  font-family: 'Lato', serif;
 }
 
 #row6 {
   margin-top: 25px;
+  font-family: 'Lato', serif;
 }
 
 #row5 {
   margin-top: 25px;
+  font-family: 'Lato', serif;
 }
 
 #row4 {
   margin-top: 25px;
+  font-family: 'Lato', serif;
 }
 
 #row3 {
   margin-top: 5px;
+  font-family: 'Lato', serif;
 }
 
 #row2 {
   margin-top: 25px;
   margin-bottom: 5px;  
+  font-family: 'Lato', serif;
 }
 
 #row1 {
   margin-bottom: 25px; 
+  font-family: 'Lato', serif;
 }
 
 .card_style {
   border: 1px solid #EBEBEB;
+  font-family: 'Lato', serif;
 }
 
 .aside_nav {
   font-size: 8px;
+  font-family: 'Lato', serif;
 }
 
 #notification_card {
   overflow-y: scroll;
+  font-family: 'Lato', serif;
 }
 
 #chart1_bottom_text {
   text-align: center;
+  font-family: 'Lato', serif;
 }
 
 .security_issues_card {
@@ -87,6 +103,7 @@ background-color: #FBFCFD;
   height: 2px;
   width: 95%;
   background-color: #35ACDE;
+  font-family: 'Lato', serif;
 }
 
 #row3_col1 {
@@ -107,45 +124,54 @@ background-color: #FBFCFD;
 .centered_text {
   text-align: center;
   color: #797979;
+  font-family: 'Lato', serif;
 }
 
 #issues_state {
   text-align: center;
   color: #35ACDE;
+  font-family: 'Lato', serif;
 }
 
 .sources_state {
   text-align: center;
   color: #35ACDE;
+  font-family: 'Lato', serif;
 }
 
 #sources_state {
   text-align: center;
   color: #35ACDE;
+  font-family: 'Lato', serif;
 }
 
 #dbs_state {
   text-align: center;
   color: #35ACDE;
+  font-family: 'Lato', serif;
 }
 
 #tables_state {
   text-align: center;
   color: #35ACDE;
+  font-family: 'Lato', serif;
 }
 
 #files_state {
   text-align: center;
   color: #35ACDE;
+  font-family: 'Lato', serif;
 }
 
 #aside_list {
   background-color: rgba(88,183,229,0.07);
+  font-family: 'Lato', serif;
 }
 
 .sens_data_text {
   font-size: 10px;
   margin-left: 15px;
+  font-family: 'Lato', serif;
 }
 
 .vertical_text {
@@ -153,14 +179,17 @@ background-color: #FBFCFD;
 text-orientation: sideways-right;
 left: 0;
 margin-top: 150px;
+font-family: 'Lato', serif;
 }
 
 #navbar {
   height: 80px;
+  font-family: 'Lato', serif;
 }
 
 .inspection_denominator {
   color: #C5C5C5;
+  font-family: 'Lato', serif;
 }
 
 #graph_icon1 {
@@ -169,4 +198,18 @@ margin-top: 150px;
   width: 70px;
   height: 60px;
 
+}
+
+#notification_number {
+  font-family: 'Lato', serif;
+  padding: 5px 11px 5px 13px;
+  border-radius: 10px;
+  background-color: #E97150;
+  color: #fff;
+  width: 35px;
+  font-size: 12px;
+}
+
+body {
+  font-family: 'Lato', serif;
 }

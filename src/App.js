@@ -174,7 +174,14 @@ class App extends React.Component {
     		
     		<Card.Body className="card_style" id="notification_card">
       			<Card.Title>
+      				<Row>
+      				<Col>
       				Notification
+      				</Col>
+      				<Col xs={8}>
+      				<div id="notification_number">3</div>
+      				</Col>
+      				</Row>
       			</Card.Title>
       			<Card.Text>
     
