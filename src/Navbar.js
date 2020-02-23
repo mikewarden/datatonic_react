@@ -23,8 +23,9 @@ export default function Navbar() {
   };
 
   return (
-    <Paper className={classes.root}>
+    <Paper className="nav_labels">
       <Tabs id="navbar"
+      className="nav_labels"
         value={value}
         onChange={handleChange}
         indicatorColor="primary"
@@ -33,10 +34,10 @@ export default function Navbar() {
       >
         <Tab label={<img src={logo} />} disabled/>
 
-        <Tab label="Dashboard" />
-        <Tab label="Sources"  />
-        <Tab label="Inspector" />
-        <Tab label="Ingestion" />
+        <Tab label={<span className="nav_labels">Dashboard</span>} />
+        <Tab label={<span className="nav_labels">Sources</span>}  />
+        <Tab label={<span className="nav_labels">Inspector</span>} />
+        <Tab label={<span className="nav_labels">Ingestion</span>} />
         <Tab disabled/>
         <Tab disabled/>
         <NavDropDown />

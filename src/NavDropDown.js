@@ -26,8 +26,7 @@ export default function NavDropDown(props) {
   const handleChange = event => {
     props.onInput(event.target.value);
     console.log(event.target.value);
-
-  };
+ };
 
   const handleClose = () => {
     setOpen(false);

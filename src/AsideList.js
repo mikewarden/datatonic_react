@@ -33,6 +33,7 @@ export default function AsideList() {
         </ListItemAvatar>
         <ListItemText primary="Security Threat" secondary="3 hours ago" />
       </ListItem>
+      <h6 className="aside_text">Augue veniam mandamus eu his. Et habemus explicari eum</h6>
       <Divider variant="inset" component="li" />
       <ListItem>
         <ListItemAvatar>
@@ -42,6 +43,7 @@ export default function AsideList() {
         </ListItemAvatar>
         <ListItemText primary="New Sensitive Data" secondary="3 hours ago" />
       </ListItem>
+       <h6 className="aside_text">Lorem ipsum dolor sit amet, pri te oportere reprehendunt. </h6>
       <Divider variant="inset" component="li" />
       <ListItem>
         <ListItemAvatar>
@@ -51,6 +53,7 @@ export default function AsideList() {
         </ListItemAvatar>
         <ListItemText primary="New Sensitive Data" secondary="3 hours ago" />
       </ListItem>
+       <h6 className="aside_text">sit eu ancillae constituto. </h6>
     </List>
   );
 }

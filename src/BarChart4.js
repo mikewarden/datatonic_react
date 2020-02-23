@@ -4,40 +4,7 @@ import CanvasJSReact from './canvasjs.react';
 var CanvasJS = CanvasJSReact.CanvasJS;
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 export default class BarChart4 extends React.Component {
-   constructor() {
-    super();
-      this.state = {
-        val1: 0,
-        val2: 0,
-        val3: 0,
-        val4: 0,
-        val5: 0,
-        val6: 0,
-        val7: 0,
-        val8: 0
-        
-    }
-  }
-
-   componentDidMount() {
-    fetch("http://localhost:8080/data_entries")
-.then((res) => res.json())
-.then((response) => {
-  this.setState({
-    val1: response[1].coverageDBs,
-    val2: response[1].coverageFiles,
-    val3: response[1].icDS1,
-    val4: response[1].icDS3,
-    val5: response[0].coverageDBs,
-    val6: response[0].coverageFiles,
-    val7: response[0].icDS1,
-    val8: response[0].icDS3
-
-  })
-  console.log(this.state.swiftCode)
-}).catch((err) => console.log(err));
-  }
-  
+   
   render() {
     const options = {
       title: {
@@ -68,10 +35,10 @@ export default class BarChart4 extends React.Component {
         indexLabelFontColor: "white",
         yValueFormatString: "",
         dataPoints: [
-          { label: "DS1",   y: this.state.val1 },
-          { label: "DS2",   y: this.state.val2  },
-          { label: "DS3",   y: this.state.val3  },
-          { label: "DS4",   y: this.state.val4  },
+          { label: "DS1",   y: this.props.val1 },
+          { label: "DS2",   y: this.props.val2  },
+          { label: "DS3",   y: this.props.val3  },
+          { label: "DS4",   y: this.props.val4  },
           
         ]
       },{
@@ -83,10 +50,10 @@ export default class BarChart4 extends React.Component {
         indexLabelFontColor: "white",
         yValueFormatString: "",
         dataPoints: [
-          { label: "DS1",   y: this.state.val5  },
-          { label: "DS2",   y: this.state.val6 },
-          { label: "DS3",   y: this.state.val7  },
-          { label: "DS4",   y: this.state.val8  },
+          { label: "DS1",   y: this.props.val5  },
+          { label: "DS2",   y: this.props.val6 },
+          { label: "DS3",   y: this.props.val7  },
+          { label: "DS4",   y: this.props.val8  },
         ]
       },
       {

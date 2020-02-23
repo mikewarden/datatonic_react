@@ -35,8 +35,10 @@ background-color: #FBFCFD;
 }
 
 #overview-text {
-  margin-left: 20px;
+  margin-left: 0px;
   font-family: 'Lato', serif;
+  font-size: 27px;
+  color: #58595B;
 }
 #scan-text {
   float: right;
@@ -179,16 +181,20 @@ background-color: #FBFCFD;
 }
 
 .vertical_text {
-  writing-mode: vertical-rl;
-text-orientation: sideways-right;
-left: 0;
-margin-top: 150px;
-font-family: 'Lato', serif;
+   writing-mode: tb-rl;
+   transform: rotate(-180deg);
+   text-orientation: sideways-right;
+   left: 0;
+   margin-top: 80px;
+   font-family: 'Lato', serif;
+   color: #797979;
+   font-size: 12px;
 }
 
 #navbar {
   height: 80px;
   font-family: 'Lato', serif;
+  text-transform: none;
 }
 
 .inspection_denominator {
@@ -217,6 +223,30 @@ font-family: 'Lato', serif;
 }
 
 #pieChart1Card {
+
+}
+
+.nav_labels {
+  font-family: 'Lato', serif;
+  text-transform: none;
+  font-size: 14px;
+  font-weight: bold;
+  margin:2px;
+  color: #ABABAB;
+}
+
+.aside_text {
+  margin-left: 70px;
+}
+
+#notification_text {
+  font-size: 18px;
+  font-family: 'Lato', serif;
+  color: #797979;
+}
+
+.chart_title_text {
+  color: #797979;
 
 }
 

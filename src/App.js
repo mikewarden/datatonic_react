@@ -27,11 +27,7 @@ class App extends React.Component {
 	constructor() {
     super();
       this.state = {
-      	sources: 0,
-        issues: 0,
-    	dbs: 0,
-    	tables: 0,
-    	files: 0,
+      	sources: 0, issues: 0, dbs: 0, tables: 0, files: 0, swiftCode: 0, email: 0, bank: 0, phone: 0, ssn: 0, passport: 0, routing: 0, dob: 0, credit: 0,iban: 0, hippaa: 0, ferpa: 0, class3: 0, class4: 0, class5: 0, class6: 0,class7: 0, class8: 0, pCi: 0, p11: 0, val1: 0, val2: 0, val3: 0, val4: 0,val5: 0, val6: 0, val7: 0, val8: 0,
     }
   }
 
@@ -45,6 +41,34 @@ class App extends React.Component {
     dbs: response[1].coverageDBs,
     tables: response[1].coverageTables,
     files: response[1].coverageFiles,
+    swiftCode: response[1].swiftCode,
+    email: response[1].email,
+    bank: response[1].bank,
+    phone: response[1].phone,
+    ssn: response[1].ssn,
+    passport: response[1].passport,
+    routing: response[1].routing,
+    dob: response[1].dob,
+    credit: response[1].creditCard,
+    iban: response[1].ferpa,
+    hippaa: response[1].hippaa,
+    ferpa: response[1].ferpa,
+    class3: response[1].class3,
+    class4: response[1].class4,
+    class5: response[1].class5,
+    class6: response[1].class6,
+    class7: response[1].class7,
+    class8: response[1].class8,
+    pCi: response[1].routing,
+    p11: response[1].p11,
+    val1: response[1].coverageDBs,
+    val2: response[1].coverageFiles,
+    val3: response[1].icDS1,
+    val4: response[1].icDS3,
+    val5: response[0].coverageDBs,
+    val6: response[0].coverageFiles,
+    val7: response[0].icDS1,
+    val8: response[0].icDS
   })
   console.log(this.state.swiftCode)
 }).catch((err) => console.log(err));
@@ -59,17 +83,15 @@ class App extends React.Component {
   </Row>
   <Row id="row2">
     <Col>
-      <h2 id="overview-text">Overview</h2>
+      <span id="overview-text">Overview</span>
     </Col>
     <Col><br/>
       <h6 id="scan-text">Last scan <strong>4 hours ago</strong></h6>
     </Col>
-
-  </Row>
+	</Row>
   <hr/>
   <Row id="row3">
-    <Col id="row3_col1" xs={3}>
-    	
+    <Col id="row3_col1" xs={3}>	
     	<Card className="card_style">
     		<div className="security_issues_card"></div>
     		<Card.Body className="card_style">
@@ -95,7 +117,7 @@ class App extends React.Component {
     			<Row>
     			<Col>
     				<span class="sources_state">{this.state.sources}</span><span className="inspection_denominator">/50</span>
-    				<ProgressBar now={this.state.sources} />
+    				<ProgressBar now={this.state.sources}/>
     				<span className="sens_data_text">Data Sources</span>
     			</Col>
     			<Col>
@@ -154,12 +176,12 @@ class App extends React.Component {
     </Col>
   </Row>
   <Row id="row4">
-    <Col xs={8}>	
+    <Col xs={7}>	
     	<Card border="light" className="card_style">
     	
     		<Card.Body className="card_style">
       			<Card.Title>
-      				Sensitive Data Distribution by Data Sources
+      				<span className="chart_title_text"> Sensitive Data Distribution by Data Sources</span>
       			</Card.Title>
       			<Card.Text>
     
@@ -169,14 +191,14 @@ class App extends React.Component {
     		</Card.Body>
   		</Card>
   	</Col>
-    <Col xs={4}>
+    <Col xs={5}>
     	<Card border="light" className="card_style">
     		
     		<Card.Body className="card_style" id="notification_card">
       			<Card.Title>
       				<Row>
       				<Col>
-      				Notification
+      				<span id="notification_text">Notification</span>
       				</Col>
       				<Col xs={8}>
       				<div id="notification_number">3</div>
@@ -197,10 +219,21 @@ class App extends React.Component {
     		
     		<Card.Body className="card_style">
       			<Card.Title>
-      				Sensitive Info By Type
+      				<span className="chart_title_text"> Sensitive Info By Type</span>
       			</Card.Title>
       			<Card.Text>
-    				<PieChart1 />
+    				<PieChart1 
+    				swiftCode={this.state.swiftCode}
+    				email={this.state.email}
+    				bank={this.state.bank}
+    				phone={this.state.phone}
+    				ssn={this.state.ssn}
+        			passport={this.state.passport}
+        			routing={this.state.routing}
+        			dob={this.state.dob}
+        			credit={this.state.credit}
+        			iban={this.state.iban}
+    				/>
       			</Card.Text>
       		
     		</Card.Body>
@@ -210,12 +243,23 @@ class App extends React.Component {
     	<Card border="light" className="card_style">
     		<Card.Body className="card_style">
       			<Card.Title>
-      				Sensitive Info By Category
+      				<span className="chart_title_text"> Sensitive Info By Cetegory</span>
       			</Card.Title>
       			<Card.Text>
     
       			</Card.Text>
-      			<PieChart2 />
+      			<PieChart2 
+      				hippaa={this.state.hippaa}
+    				ferpa={this.state.ferpa}
+    				class3={this.state.class3}
+    				class4={this.state.class4}
+    				class5={this.state.class5}
+    				class6={this.state.class6}
+    				class7={this.state.class7}
+    				class8={this.state.class8}
+    				pCi={this.state.pCi}
+    				p11={this.state.p11}
+      			/>
     		</Card.Body>
   		</Card>
     </Col>
@@ -223,7 +267,7 @@ class App extends React.Component {
     	<Card border="light" className="card_style">
     		<Card.Body className="card_style">
       			<Card.Title>
-      				Inspection Coverage	
+      				<span className="chart_title_text"> Inspection Coverage</span>
       			</Card.Title>
       			<Row>
       			<Col xs={2}>
@@ -306,7 +350,16 @@ class App extends React.Component {
     
       			</Card.Text>
       			<Col xs={10}>
-      			<BarChart4 />
+      			<BarChart4 
+      				val1={this.state.val1}
+    				val2={this.state.val2}
+    				val3={this.state.val3}
+    				val4={this.state.val4}
+    				val5={this.state.val5}
+    				val6={this.state.val6}
+    				val7={this.state.val7}
+    				val8={this.state.val8}
+      			/>
       			</Col>
       			</Row>
       			<Card.Text>

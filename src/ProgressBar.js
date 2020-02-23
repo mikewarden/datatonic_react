@@ -5,7 +5,7 @@ export default class ProgressBar extends React.Component {
   render () {
     return (
       <div>
-        <Progress completed={75} />
+        <Progress completed={75} height={15}/>
       </div>
     )
   }
