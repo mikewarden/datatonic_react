@@ -12,7 +12,7 @@ export default class BarChart1 extends React.Component {
           this.state = {
           
             series: [{
-              data: [400, 430, 448, 470]
+              data: [0, 0, 0, 0]
             }],
             options: {
               chart: {
@@ -38,7 +38,7 @@ export default class BarChart1 extends React.Component {
         }
 
          componentDidMount() {
-    fetch("http://localhost:8080/data_entries")
+    fetch("https://cryptic-refuge-77929.herokuapp.com/data_entries")
 .then((res) => res.json())
 .then((response) => {
   this.setState({
