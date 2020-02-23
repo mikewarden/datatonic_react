@@ -27,15 +27,15 @@ class StackedChart1 extends React.Component {
 .then((res) => res.json())
 .then((response) => {
   this.setState({
-    swiftCode: response[0].swiftCode,
-    email: response[0].email,
-    bank: response[0].bank,
-    phone: response[0].phone,
-    ssn: response[0].ssn,
-    passport: response[0].passport,
-    routing: response[0].routing,
-    dob: response[0].dob,
-    credit: response[0].creditCard
+    swiftCode: response[1].swiftCode,
+    email: response[1].email,
+    bank: response[1].bank,
+    phone: response[1].phone,
+    ssn: response[1].ssn,
+    passport: response[1].passport,
+    routing: response[1].routing,
+    dob: response[1].dob,
+    credit: response[1].creditCard
 
   })
   console.log(this.state.swiftCode)
