@@ -128,46 +128,55 @@ class StackedChart1 extends React.Component {
   
         <CommonSeriesSettings argumentField="state" type="stackedBar" />
         <Series className="series-bar"
+          color="#228FC2"
           barPadding= "0.5"
           valueField="swiftCode"
           name="SwiftCode"
         />
         <Series className="series-bar"
+        color="#E97150"
         barPadding= "0.5"
           valueField="email"
           name="Email"
         />
         <Series className="series-bar"
+        color="#48A66B"
         barPadding= "0.5"
           valueField="bank"
           name="US Bank Account Number"
         />
         <Series className="series-bar"
+        color="#228FC2"
         barPadding= "0.5"
           valueField="phone"
           name="Phone"
         />
         <Series className="series-bar"
+        color="#6DC893"
         barPadding= "0.5"
           valueField="ssn"
           name="SSN"
         />
         <Series className="series-bar"
+        color="#ED7F61"
         barPadding= "0.5"
           valueField="passport"
           name="US Passport"
         />
         <Series className="series-bar"
+        color="#228FC2"
         barPadding= "0.5"
           valueField="routing"
           name="ABA Routing"
         />
         <Series className="series-bar"
+        color="#48A66B"
         barPadding= "0.5"
           valueField="dob"
           name="DOB"
         />
         <Series className="series-bar"
+        color="#CC4F2D"
         barPadding= "0.5"
           valueField="credit"
           name="Credit Card"
