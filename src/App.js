@@ -78,47 +78,42 @@ class App extends React.Component {
   return (
     <div className="App">
     	<Navbar />
-      <Container>
-  <Row id="row1">
-  </Row>
-  <Row id="row2">
-    <Col>
-      <span id="overview-text">Overview</span>
-    </Col>
-    <Col><br/>
-      <h6 id="scan-text">Last scan <strong>4 hours ago</strong></h6>
-    </Col>
-	</Row>
-  <hr/>
-  <Row id="row3">
-    <Col id="row3_col1" md={2}>	
-    	<Card className="card_style">
-    		<div className="security_issues_card"></div>
-    		<Card.Body id="issues_card_body"className="card_style">
-    		<p className="centered_text">Security Issues Resolved</p>
-    		<h2 id="issues_state">{this.state.issues}</h2>
-    		<TimelineIcon id="graph_icon1"/>
-      			<Card.Title>
-      				
+      	<Container>
+  
+  		<Row id="row2">
+    		<Col>
+      			<span id="overview-text">Overview</span>
+    		</Col>
+    		<Col><br/>
+      			<h6 id="scan-text">Last scan <strong>4 hours ago</strong></h6>
+    		</Col>
+		</Row>
+  		<hr/>
+  		<Row id="row3">
+    		<Col id="row3_col1" md={2}>	
+    			<Card className="card_style">
+    				<div className="security_issues_card"></div>
+    			<Card.Body id="issues_card_body"className="card_style">
+    				<p className="centered_text">Security Issues Resolved</p>
+    				<h2 id="issues_state">{this.state.issues}</h2>
+    				<TimelineIcon id="graph_icon1"/>
+      			<Card.Title>   				
       			</Card.Title>
-      			<Card.Text>
-    
+      			<Card.Text>   
       			</Card.Text>
- 
     		</Card.Body>
   		</Card>
     </Col>
     <Col id="row3_col2" md={5}>
-    	
     	<Card className="card_style">
     		<div className="security_issues_card"></div>
     		<Card.Body className="card_style">
     			<p className="centered_text">Inspection Coverage</p>
     			<Row>
-    			<Col>
-    				<span class="sources_state">{this.state.sources}</span><span className="inspection_denominator">/50</span>
-    				<ProgressBar now={this.state.sources}/>
-    				<span className="sens_data_text">Data Sources</span>
+    				<Col>
+    					<span class="sources_state">{this.state.sources}</span><span className="inspection_denominator">/50</span>
+    					<ProgressBar now={this.state.sources}/>
+    					<span className="sens_data_text">Data Sources</span>
     			</Col>
     			<Col>
     				<span class="sources_state">{this.state.dbs}<span className="inspection_denominator">/50</span></span>
@@ -140,8 +135,7 @@ class App extends React.Component {
     		</Card.Body>
   		</Card>
     </Col>
-    <Col id="row3_col3" md={5}>
-    
+    <Col id="row3_col3" md={5}>  
     	<Card  className="card_style">
     		<div className="security_issues_card"></div>
     		<Card.Body id="data_locations_card" className="card_style">
@@ -197,18 +191,18 @@ class App extends React.Component {
     		<Card.Body className="card_style" id="notification_card">
       			<Card.Title>
       				<Row>
-      				<Col>
-      				<span id="notification_text">Notification</span>
-      				</Col>
-      				<Col xs={8}>
-      				<div id="notification_number">3</div>
-      				</Col>
+      					<Col>
+      						<span id="notification_text">Notification</span>
+      					</Col>
+      					<Col xs={8}>
+      						<div id="notification_number">3</div>
+      					</Col>
       				</Row>
       			</Card.Title>
       			<Card.Text>
     
       			</Card.Text>
-      			<AsideMenu />
+      				<AsideMenu />
     		</Card.Body>
   		</Card>
     </Col>
@@ -270,15 +264,15 @@ class App extends React.Component {
       				<span className="chart_title_text"> Inspection Coverage</span>
       			</Card.Title>
       			<Row>
-      			<Col xs={2}>
-      			<p className="vertical_text" >(Data Source)</p>
-      			</Col>
+      				<Col xs={2}>
+      					<p className="vertical_text" >(Data Source)</p>
+      				</Col>
       			<Card.Text>
     
       			</Card.Text>
-      			<Col xs={10}>
-      			<BarChart1 />
-      			</Col>
+      				<Col xs={10}>
+      					<BarChart1 />
+      				</Col>
       			</Row>
     		</Card.Body>
   		</Card>
@@ -294,15 +288,15 @@ class App extends React.Component {
       				<span className="chart_title_text">Count of Sensitive Info Type</span>
       			</Card.Title>
       			<Row>
-      			<Col xs={2}>
-      			<p className="vertical_text" >(Data Source)</p>
-      			</Col>
+      				<Col xs={2}>
+      					<p className="vertical_text" >(Data Source)</p>
+      				</Col>
       			<Card.Text>
     
       			</Card.Text>
-      			<Col xs={10}>
-      			<BarChart2 />
-      			</Col>
+      				<Col xs={10}>
+      					<BarChart2 />
+      				</Col>
       			</Row>
       			<Card.Text>
     
@@ -319,15 +313,15 @@ class App extends React.Component {
       				<span className="chart_title_text">Count of Sensitive Info Category</span>
       			</Card.Title>
       			<Row>
-      			<Col xs={2}>
-      			<p className="vertical_text" >(Data Source)</p>
-      			</Col>
+      				<Col xs={2}>
+      					<p className="vertical_text" >(Data Source)</p>
+      				</Col>
       			<Card.Text>
     
       			</Card.Text>
-      			<Col xs={10}>
-      			<BarChart3 />
-      			</Col>
+      				<Col xs={10}>
+      					<BarChart3 />
+      				</Col>
       			</Row>
       			<Card.Text>
     
@@ -343,24 +337,24 @@ class App extends React.Component {
       				<span className="chart_title_text">Sensitive Data Record Count</span>
       			</Card.Title>
       			<Row>
-      			<Col xs={2}>
-      			<p className="vertical_text" >(Data Source)</p>
-      			</Col>
-      			<Card.Text>
+      				<Col xs={2}>
+      					<p className="vertical_text" >(Data Source)</p>
+      				</Col>
+      				<Card.Text>
     
-      			</Card.Text>
-      			<Col xs={10}>
-      			<BarChart4 
-      				val1={this.state.val1}
-    				val2={this.state.val2}
-    				val3={this.state.val3}
-    				val4={this.state.val4}
-    				val5={this.state.val5}
-    				val6={this.state.val6}
-    				val7={this.state.val7}
-    				val8={this.state.val8}
-      			/>
-      			</Col>
+      				</Card.Text>
+      				<Col xs={10}>
+      					<BarChart4 
+      						val1={this.state.val1}
+    						val2={this.state.val2}
+    						val3={this.state.val3}
+    						val4={this.state.val4}
+    						val5={this.state.val5}
+    						val6={this.state.val6}
+    						val7={this.state.val7}
+    						val8={this.state.val8}
+      					/>
+      				</Col>
       			</Row>
       			<Card.Text>
     

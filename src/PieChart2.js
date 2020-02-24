@@ -40,9 +40,7 @@ class PieChart2 extends React.Component {
 		}
 		return (
 		<div className="canvas_js_chart">
-			<CanvasJSChart options={options}
-				/* onRef={ref => this.chart = ref} */
-			/>
+			<CanvasJSChart options={options} />
 		</div>
 		);
 	}

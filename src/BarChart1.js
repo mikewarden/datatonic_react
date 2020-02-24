@@ -50,7 +50,6 @@ export default class BarChart1 extends React.Component {
 }).catch((err) => console.log(err));
   }
       
-
         render() {
           return (
             

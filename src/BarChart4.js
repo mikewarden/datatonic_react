@@ -75,10 +75,7 @@ export default class BarChart4 extends React.Component {
     }
     return (
     <div>
-      <CanvasJSChart options = {options}
-        /* onRef={ref => this.chart = ref} */
-      />
-      {/*You can get reference to the chart instance as shown above using onRef. This allows you to access all chart properties and methods*/}
+      <CanvasJSChart options = {options} />
     </div>
     );
   }
