@@ -23,7 +23,7 @@ class StackedChart1 extends React.Component {
   }
 
   componentDidMount() {
-    fetch("http://https://cryptic-refuge-77929.herokuapp.com/data_entries")
+    fetch("https://cryptic-refuge-77929.herokuapp.com/data_entries")
 .then((res) => res.json())
 .then((response) => {
   this.setState({
