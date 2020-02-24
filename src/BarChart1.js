@@ -43,7 +43,7 @@ export default class BarChart1 extends React.Component {
 .then((response) => {
   this.setState({
     series: [{
-              data: [response[0].icDS1, response[0].icDS2, response[1].icDS3, response[1].icDS4]
+              data: [response[1].icDS1, response[0].icDS2, response[1].icDS3, response[0].icDS4]
             }]
 	})
   console.log(this.state.swiftCode)
