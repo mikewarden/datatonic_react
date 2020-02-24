@@ -206,7 +206,7 @@ background-color: #FBFCFD;
 }
 
 #graph_icon1 {
-  margin-left: 80px;
+  margin-left: 30px;
   color: #35ACDE;
   width: 70px;
   height: 35px;
@@ -250,6 +250,14 @@ background-color: #FBFCFD;
   font-family: 'Lato', serif;
   color: #797979;
   margin-left: 20px;
+}
+
+#issues_card_body {
+  height: 170px;
+}
+
+#data_locations_card {
+  height: 170px;
 }
 
 /*::-webkit-scrollbar {

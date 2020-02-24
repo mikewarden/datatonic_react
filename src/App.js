@@ -91,10 +91,10 @@ class App extends React.Component {
 	</Row>
   <hr/>
   <Row id="row3">
-    <Col id="row3_col1" xs={3}>	
+    <Col id="row3_col1" xs={2}>	
     	<Card className="card_style">
     		<div className="security_issues_card"></div>
-    		<Card.Body className="card_style">
+    		<Card.Body id="issues_card_body"className="card_style">
     		<p className="centered_text">Security Issues Resolved</p>
     		<h2 id="issues_state">{this.state.issues}</h2>
     		<TimelineIcon id="graph_icon1"/>
@@ -140,11 +140,11 @@ class App extends React.Component {
     		</Card.Body>
   		</Card>
     </Col>
-    <Col id="row3_col3" xs={4}>
+    <Col id="row3_col3" xs={5}>
     
     	<Card  className="card_style">
     		<div className="security_issues_card"></div>
-    		<Card.Body className="card_style">
+    		<Card.Body id="data_locations_card" className="card_style">
     		<p className="centered_text">Sensitive Data Locations</p>
     		<Row>
     			<Col>
