@@ -32,15 +32,15 @@ export default function Navbar() {
         textColor="primary"
         centered
       >
-        <Tab label={<img src={logo} />} disabled/>
+        <Tab disabled label={<img src={logo} />}/>
 
-        <Tab label={<span className="nav_labels">Dashboard</span>} />
+        <Tab label={<span id="active_nav" className="nav_labels">Dashboard</span>} />
         <Tab label={<span className="nav_labels">Sources</span>}  />
         <Tab label={<span className="nav_labels">Inspector</span>} />
         <Tab label={<span className="nav_labels">Ingestion</span>} />
         <Tab disabled/>
         <Tab disabled/>
-        <NavDropDown />
+        <Tab label={<NavDropDown />} />
       </Tabs>
     </Paper>
   );

@@ -260,6 +260,10 @@ background-color: #FBFCFD;
   height: 170px;
 }
 
+#active_nav {
+  color: #444444;
+}
+
 /*::-webkit-scrollbar {
   width: 10px;
 }

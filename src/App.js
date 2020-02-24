@@ -91,7 +91,7 @@ class App extends React.Component {
 	</Row>
   <hr/>
   <Row id="row3">
-    <Col id="row3_col1" xs={2}>	
+    <Col id="row3_col1" md={2}>	
     	<Card className="card_style">
     		<div className="security_issues_card"></div>
     		<Card.Body id="issues_card_body"className="card_style">
@@ -108,7 +108,7 @@ class App extends React.Component {
     		</Card.Body>
   		</Card>
     </Col>
-    <Col id="row3_col2" xs={5}>
+    <Col id="row3_col2" md={5}>
     	
     	<Card className="card_style">
     		<div className="security_issues_card"></div>
@@ -140,7 +140,7 @@ class App extends React.Component {
     		</Card.Body>
   		</Card>
     </Col>
-    <Col id="row3_col3" xs={5}>
+    <Col id="row3_col3" md={5}>
     
     	<Card  className="card_style">
     		<div className="security_issues_card"></div>
@@ -176,7 +176,7 @@ class App extends React.Component {
     </Col>
   </Row>
   <Row id="row4">
-    <Col xs={7}>	
+    <Col md={7}>	
     	<Card border="light" className="card_style">
     	
     		<Card.Body className="card_style">
@@ -191,7 +191,7 @@ class App extends React.Component {
     		</Card.Body>
   		</Card>
   	</Col>
-    <Col xs={5}>
+    <Col md={5}>
     	<Card border="light" className="card_style">
     		
     		<Card.Body className="card_style" id="notification_card">
@@ -214,7 +214,7 @@ class App extends React.Component {
     </Col>
   </Row> 
   <Row id="row5">
-    <Col xs={4}>
+    <Col md={4}>
     	<Card border="light" id="pieChart1Card" className="card_style">
     		
     		<Card.Body className="card_style">
@@ -239,7 +239,7 @@ class App extends React.Component {
     		</Card.Body>
   		</Card>
     </Col>
-    <Col xs={4}>
+    <Col md={4}>
     	<Card border="light" className="card_style">
     		<Card.Body className="card_style">
       			<Card.Title>
@@ -263,7 +263,7 @@ class App extends React.Component {
     		</Card.Body>
   		</Card>
     </Col>
-    <Col xs={4}>
+    <Col md={4}>
     	<Card border="light" className="card_style">
     		<Card.Body className="card_style">
       			<Card.Title>
@@ -286,7 +286,7 @@ class App extends React.Component {
     <br/>
   </Row>
   <Row id="row6">
-    <Col xs={4}>
+    <Col md={4}>
     	<Card border="light" className="card_style">
     		
     		<Card.Body className="card_style">
@@ -311,7 +311,7 @@ class App extends React.Component {
     		</Card.Body>
   		</Card>
     </Col>
-    <Col xs={4}>
+    <Col md={4}>
     	<Card border="light" className="card_style">
     		
     		<Card.Body id="chart3_style" className="card_style">
@@ -335,7 +335,7 @@ class App extends React.Component {
     		</Card.Body>
   		</Card>
     </Col>
-    <Col xs={4}>
+    <Col md={4}>
     	<Card border="light" className="card_style">
     		
     		<Card.Body className="card_style">
